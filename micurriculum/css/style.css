@@ -1,0 +1,63 @@
+*{outline:solid red 1px;}
+
+body {background:lightseagreen;
+max-width:960px; margin:10px auto; font-family:sans-serif;}
+
+/*ul {list-style:none;}*/
+
+ul.menu { 
+  list-style:none;
+  font-size: 12px;
+  display:flex;
+ 
+}
+
+ul.menu li {margin: auto 40px;}
+
+img#logo {width:100px;}
+
+
+
+ul.perfil{display:flex;margin:100px auto;}
+
+
+header{background-image:url(https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-1.2.1&ixid=mnwxmja3fdb8mhxzzwfyy2h8m3x8b2zmawnlfgvufdb8fdb8fa%3d%3d&auto=format&fit=crop&w=500&q=60);
+background-attachment:fixed;}
+
+h1{text-align:center;margin:50px auto}
+h2{text-align:center;margin:50px auto}
+
+p#educacion {text-align: center;
+background: #8b6464; color:white; padding:40px;}
+p#formacion {text-align:center;background: #9f9191; color:white; padding:40px;}
+
+ul.col
+{
+padding-right: 0px;
+padding-left: 0px;
+float: left;
+padding-bottom: 0px;
+margin: 15px 0px;
+width: 100%;
+padding-top: 0px;
+list-style-type: none
+}
+
+ul.col li
+{
+padding-right: 50px;
+display: inline;
+padding-left: 5px;
+float: left;
+padding-bottom: 20px;
+width: 40%;
+padding-top: 30px;
+  text-align:center;
+margin: 5px;  
+
+}
+
+li#a{background:#8b6464;}
+li#b{background:#eb8c8c;}
+li#c{background:#9f9191;}
+li#d{background:#ff8989;}
