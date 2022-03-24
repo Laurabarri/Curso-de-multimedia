@@ -1,4 +1,4 @@
-*{  outline: 0.2px solid red;
+*{
     margin: 0; padding: 0; border: 0; box-sizing: border-box;
 }
 
@@ -7,7 +7,6 @@ body{
     padding: 15px;
     max-width: 960px;
     margin:0 auto;
-
 }
 
 a{ text-decoration:none; color:black;}
@@ -17,9 +16,11 @@ img{ max-width: 100%}
 ul#trabajos,
 ul.tags{
     list-style: none;
+
     display: flex;
     flex-wrap: wrap;
-    gap:6px;
+   
+
 }
 
 ul#trabajos{
@@ -38,28 +39,34 @@ ul#trabajos > li{
     transition:0.3s;
 }
 
+
 ul#trabajos > li:hover{
  
     box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.4);
    
 }
 
+
 ul#trabajos > li:hover a{
  
-    color:black;   
-    }
+color:black;   
+}
+
+
+
 
 ul#trabajos > li a{
-        color:grey;
-    }
+    color:grey;
+}
 
- /* tags de categorías */
+
+/* tags de categorías */
 ul.tags{
     margin-top:10px;
     gap:2px;
     justify-content:center;
 
-}   
+}
 
 ul.tags li{
     text-align: center;
@@ -68,12 +75,13 @@ ul.tags li{
     border-radius:9999px;
     font-size:12px;
     font-weight:bold;
+  
 }
 
 ul.tags li.html{ background:rgb(219, 237, 219);}
 ul.tags li.css{ background:rgb(250, 222, 201);}
 ul.tags li.js{ background:rgb(232, 222, 238);}
-ul.tags li.fg{ background:rgb(222, 233, 238);}
+ul.tags li.figma{ background:rgb(222, 233, 238);}
 
 ul.tags li.html::before{ content:"HTML"}
 ul.tags li.css::before{ content:"CSS"}
