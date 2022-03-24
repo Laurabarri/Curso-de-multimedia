@@ -42,7 +42,7 @@ function arribas() {
     } else {
         n_arriba = 0;
     }
-    document.getElementById('pelo').style.backgroundImage = "url('img/" + arriba[n_arriba] + "')";
+    document.getElementById('pelo').style.backgroundImage ="url('img/"+ arriba[n_arriba] +"')";
 }
 
 
@@ -52,7 +52,7 @@ function medios() {
     } else {
         n_medio = 0;
     }
-    document.getElementById('ojos').style.backgroundImage = "url('img/" + medio[n_medio] + "')";
+    document.getElementById('ojos').style.backgroundImage ="url('img/"+ medio[n_medio] +"')";
 
 }
 
@@ -62,21 +62,21 @@ function abajos() {
     } else {
         n_abajo = 0;
     }
-    document.getElementById('boca').style.backgroundImage = "url('img/" + abajo[n_abajo] + "')";
-    console.log("img/" + abajo[0]);
+    document.getElementById('boca').style.backgroundImage ="url('img/"+ abajo[n_abajo] +"')";
+    console.log("img/"+ abajo[0]);
 }
 
 function aleatorio() {
-    document.getElementById('pelo').style.backgroundImage = "url('img/" + arriba[random(0, arriba.length - 1)] + "')";
-    document.getElementById('ojos').style.backgroundImage = "url('img/" + medio[random(0, medio.length - 1)] + "')";
-    document.getElementById('boca').style.backgroundImage = "url('img/" + abajo[random(0, abajo.length - 1)] + "')";
+    document.getElementById('pelo').style.backgroundImage ="url('img/"+ arriba[random(0, arriba.length - 1)] +"')";
+    document.getElementById('ojos').style.backgroundImage ="url('img/"+ medio[random(0, medio.length - 1)] +"')";
+    document.getElementById('boca').style.backgroundImage ="url('img/"+ abajo[random(0, abajo.length - 1)] +"')";
 }
 
 
 
 function color() {
     let mitono = document.getElementById('tono').value;
-    document.getElementById('cabeza').style.filter = "hue-rotate(" + mitono + "deg)";
+    document.getElementById('cabeza').style.filter ="hue-rotate("+ mitono +"deg)";
 }
 
 
