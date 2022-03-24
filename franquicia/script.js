@@ -40,7 +40,7 @@ var personajes = [
 
 /*let texto = "";
 
-for (let i = 0; i < personajes.length; i++) {
+for (let i = 0; i <personajes.length; i++) {
     texto += "<li>"
     texto += '<img src="' + personajes[i] + '">';
     texto += "</li>";
@@ -51,7 +51,7 @@ document.getElementById('listado').innerHTML = texto;
 
 let texto = "";
 
-for (let i = 0; i < personajes.length; i++) {
+for (let i = 0; i <personajes.length; i++) {
 	texto += "<li>";
 	texto += '<img src="' + personajes[i][2] + '">';
 	texto += "<h2>" + personajes[i][0] + "</h2>";

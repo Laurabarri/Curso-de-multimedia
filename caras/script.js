@@ -37,7 +37,7 @@ let n_abajo = 0;
 
 
 function arribas() {
-    if (n_arriba < arriba.length - 1) {
+    if (n_arriba <arriba.length - 1) {
         n_arriba++;
     } else {
         n_arriba = 0;
@@ -47,7 +47,7 @@ function arribas() {
 
 
 function medios() {
-    if (n_medio < medio.length - 1) {
+    if (n_medio <medio.length - 1) {
         n_medio++;
     } else {
         n_medio = 0;
@@ -57,7 +57,7 @@ function medios() {
 }
 
 function abajos() {
-    if (n_abajo < abajo.length - 1) {
+    if (n_abajo <abajo.length - 1) {
         n_abajo++;
     } else {
         n_abajo = 0;
