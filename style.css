@@ -4,29 +4,28 @@
 
 body{
     font-family: sans-serif;
-    padding: 15px;
+    font-size:16px;
+    padding: 20px;
     max-width: 960px;
-    margin:0 auto;
+    min-width:320px;
+    margin:20px auto;
 
 }
 
-a{ text-decoration:none; color:black;}
+a{ text-decoration:none;}
 
 img{ max-width: 100%}
 
-ul#trabajos,
-ul.tags{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+ul#galeria,
+ul.tags{list-style: none;display: flex;flex-wrap: wrap;gap:6px;
+}
+
+ul#galeria{
+    
     gap:6px;
 }
 
-ul#trabajos{
-    gap:6px;
-}
-
-ul#trabajos > li{
+ul#galeria > li{
     margin-top:20px;
     width: 200px;
     border: 1px solid;
@@ -38,18 +37,18 @@ ul#trabajos > li{
     transition:0.3s;
 }
 
-ul#trabajos > li:hover{
+ul#galeria > li:hover{
  
     box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.4);
    
 }
 
-ul#trabajos > li:hover a{
+ul#galeria > li:hover a{
  
     color:black;   
     }
 
-ul#trabajos > li a{
+ul#galeria > li a{
         color:grey;
     }
 
@@ -81,11 +80,11 @@ ul.tags li.js::before{ content:"JavaScript"}
 ul.tags li.fg::before{ content:"Figma"}
 
 
-ul#trabajos li h3{
+ul#galeria li h3{
     margin-bottom:20px;
 }
 
-ul#trabajos > li img{
+ul#galeria > li img{
   aspect-ratio: 1 / 1;
     object-fit:cover;
     border-radius:10px;
@@ -94,4 +93,30 @@ ul#trabajos > li img{
 }
 
 
-footer{ margin-top:50px;}
+/* grid */
+ul#galeria.grid li { border-radius:20px !important; max-width:210px;}
+ul#galeria.grid li img{display: block;max-width: 196px;}
+ul#galeria.grid:hover img{ border-radius:18px;}
+
+/* list */
+ul#galeria.list > li{ width:100%; flex-direction: row; border-radius:6px;}
+ul#galeria.list > li a{display:flex;}
+ul#galeria.list img{ height: 36px;margin: 0 16px 0 0;border-radius: 4px;}
+ul#galeria.list >li:hover img{ margin-right:30px; transform:scale(1.18); }
+
+footer{ font-size:0.6em; text-align:center; margin-top:30px}
+
+button{ padding:4px 10px; border:1px grey solid; border-radius:20px; margin:4px 0px;}
+button:hover{ background:grey; color:white;}
+
+/* transform */
+
+ul li, ul li img, .tags, a, button{ transition: .3s }
+
+
+
+@media (max-width:530px){
+    ul#galeria.list .tags{ flex-direction:column;}
+    ul#galeria.list a{ display:block;}
+    
+}
