@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+body {
+    
+   background: linear-gradient(lightseagreen, rgb(221, 231, 231));
+   font-family: 'Oswald', sans-serif;
+
+    max-width: 800px;
+    margin: 10px auto;
+    }
+
+    h1 {text-shadow: 4px 2px white;
+    color: lightseagreen;}
+
+    div {
+
+        background: white;
+        max-width: 700px;
+        color:grey;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 8px 8px grey;
+        border: 5px lightseagreen solid;
+
+    }
+
+
+    input[type="text"] {background: pink;}
+
+    input[type="password"] {background: pink;}
+
+    input[type="date"] {background: pink;}
+
+    div.botones{
+      
+        text-align: center;
+    }
+
+    p {text-align: center;}
