@@ -3,20 +3,61 @@ body{
     font-family: sans-serif;
     max-width: 800px;
     margin: 20px auto;
+    padding: 20px;
+    
+}
+
+h1{
+    letter-spacing: 8px;
+    text-align: center;    
+    color: rgb(126, 49, 91);
+    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);    
+}
+main{
+    text-align: center;
 
 }
+div {
+    text-align: center;
+}
+
 img{
     max-width: 100%;
     width: 525px;
     height: 375px;
     border-radius: 15px;
-    object-fit: cover;
-    
+    object-fit: cover;       
+    box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.2);
+    }
+
+button{
+    border-radius: 15px;
+    color: white;
+    background: rgb(126, 49, 91);
+    padding: 5px 8px;
+
+    transition: .3s;
 }
 
-button {
-    border-radius: 5px;
-    color: white;
-    background: grey;
-    padding: 5px 8px;
+button:hover{
+    color: rgb(126, 49, 91);;
+    background: rgb(243, 225, 225);
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.v { color: lightseagreen;}
+.r { color: red;}
+
+select{
+    border-radius: 8px;
+    padding: 4px;
+}
+
+p{
+    margin-top: 40px;;
+}
+footer{
+    text-align: center;
+    margin: 50px;
 }
