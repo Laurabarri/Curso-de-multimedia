@@ -19,7 +19,7 @@
 
 
         <p id="elige">¿Qué tipo de plano es? Elige tu respuesta en el desplegable:</p>
-
+<div class="tplanos">
         <select name="seleccion" id="seleccion">
             <option value="0">Plano general</option>
             <option value="1">Plano americano</option>
@@ -31,13 +31,14 @@
             <option value="7">Plano picado</option>
             <option value="8">Plano contrapicado</option>
         </select>
+   
         <br>
         <div>
             <button onclick="respuesta()" id="btnComprobar">Comprobar</button>
             <br>
             <button onclick="cargarimg()" id="btnCargar">Cargar nueva imagen</button>
         </div>
-
+    </div>
         <h2 id="mensaje"></h2>
         <p id="puntuacion">Aqui puntos</p>
 
